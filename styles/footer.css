@@ -1,0 +1,28 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: 16px;
+    gap: 16px;
+    font: 14px/150% var(--font-family);
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+@media (width >= 80em) {
+    footer {
+        display: flex;
+        padding-block: 24px;
+
+        & span:nth-child(1) {
+            margin-right: auto;
+        }
+
+        & #terms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
